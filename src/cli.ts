@@ -5,7 +5,7 @@ export const cli = () => {
   yargs
     .command(
       'build <input> <output>',
-      'Write config from a config builder',
+      'Build .d.cts type files from .d.ts files to provide types for both esm and cjs outputs.',
       cmdYargs =>
         cmdYargs
           .positional('input', {

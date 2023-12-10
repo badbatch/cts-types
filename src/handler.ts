@@ -6,6 +6,7 @@ import { isError } from 'lodash-es';
 import { readFileSync } from 'node:fs';
 import { parse } from 'node:path';
 import shelljs from 'shelljs';
+import { standardiseRelativePath } from './helpers/standardiseRelativePath.ts';
 import type { HandlerArgs } from './types.ts';
 
 export const handler = ({ input, output, verbose = false }: HandlerArgs) => {
@@ -13,14 +14,15 @@ export const handler = ({ input, output, verbose = false }: HandlerArgs) => {
   verboseLog(`Building cts types for: ${input}`);
 
   try {
-    const files = glob.sync(`${input}/**/*.d.ts`);
+    const standardisedInput = standardiseRelativePath(input);
+    const files = glob.sync(`${standardisedInput}/**/*.d.ts`);
     verboseLog(`Files to convert:\n${files.join('\n')}`);
 
     for (const file of files) {
       verboseLog(`Converting: ${file}`);
       const { dir, name } = parse(file);
       const renamedFile = `${dir}/${name}.cts`;
-      const outputFile = output ? renamedFile.replace(input, output) : renamedFile;
+      const outputFile = output ? renamedFile.replace(standardisedInput, standardiseRelativePath(output)) : renamedFile;
       const content = readFileSync(file, { encoding: 'utf8' });
       const updatedContent = content.replace(/\.ts/g, '.cts');
       verboseLog(`Outputing ${file} to: ${outputFile}`);
