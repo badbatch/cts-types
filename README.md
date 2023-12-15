@@ -46,6 +46,8 @@ npm add cts-types --save-dev
 }
 ```
 
+## API
+
 ```sh
 ctsTypes build <input> <output>
 
