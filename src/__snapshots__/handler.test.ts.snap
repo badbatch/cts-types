@@ -1,0 +1,67 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`handler when there are files to convert when no output dir is provided should write the files to the input directory 1`] = `
+{
+  "dist": {
+    "types": {
+      "cli.d.cts": "//# sourceMappingURL=cli.d.cts.map",
+      "cli.d.cts.map": "{"version":3,"file":"cli.d.cts"}",
+      "cli.d.ts": "//# sourceMappingURL=cli.d.ts.map",
+      "cli.d.ts.map": "{"version":3,"file":"cli.d.ts"}",
+      "handler.d.cts": "//# sourceMappingURL=handler.d.cts.map",
+      "handler.d.cts.map": "{"version":3,"file":"handler.d.cts"}",
+      "handler.d.ts": "//# sourceMappingURL=handler.d.ts.map",
+      "handler.d.ts.map": "{"version":3,"file":"handler.d.ts"}",
+      "helpers": {
+        "standardiseRelativePath.d.cts": "//# sourceMappingURL=standardiseRelativePath.d.cts.map",
+        "standardiseRelativePath.d.cts.map": "{"version":3,"file":"standardiseRelativePath.d.cts"}",
+        "standardiseRelativePath.d.ts": "//# sourceMappingURL=standardiseRelativePath.d.ts.map",
+        "standardiseRelativePath.d.ts.map": "{"version":3,"file":"standardiseRelativePath.d.ts"}",
+      },
+      "index.d.cts": "//# sourceMappingURL=index.d.cts.map",
+      "index.d.cts.map": "{"version":3,"file":"index.d.cts"}",
+      "index.d.ts": "//# sourceMappingURL=index.d.ts.map",
+      "index.d.ts.map": "{"version":3,"file":"index.d.ts"}",
+      "types.d.cts": "//# sourceMappingURL=types.d.cts.map",
+      "types.d.cts.map": "{"version":3,"file":"types.d.cts"}",
+      "types.d.ts": "//# sourceMappingURL=types.d.ts.map",
+      "types.d.ts.map": "{"version":3,"file":"types.d.ts"}",
+    },
+  },
+}
+`;
+
+exports[`handler when there are files to convert when output dir is provided should write the files to the output directory 1`] = `
+{
+  "dist": {
+    "types": {
+      "cjs": {
+        "cli.d.cts": "//# sourceMappingURL=cli.d.cts.map",
+        "cli.d.cts.map": "{"version":3,"file":"cli.d.cts"}",
+        "handler.d.cts": "//# sourceMappingURL=handler.d.cts.map",
+        "handler.d.cts.map": "{"version":3,"file":"handler.d.cts"}",
+        "helpers": {
+          "standardiseRelativePath.d.cts": "//# sourceMappingURL=standardiseRelativePath.d.cts.map",
+          "standardiseRelativePath.d.cts.map": "{"version":3,"file":"standardiseRelativePath.d.cts"}",
+        },
+        "index.d.cts": "//# sourceMappingURL=index.d.cts.map",
+        "index.d.cts.map": "{"version":3,"file":"index.d.cts"}",
+        "types.d.cts": "//# sourceMappingURL=types.d.cts.map",
+        "types.d.cts.map": "{"version":3,"file":"types.d.cts"}",
+      },
+      "cli.d.ts": "//# sourceMappingURL=cli.d.ts.map",
+      "cli.d.ts.map": "{"version":3,"file":"cli.d.ts"}",
+      "handler.d.ts": "//# sourceMappingURL=handler.d.ts.map",
+      "handler.d.ts.map": "{"version":3,"file":"handler.d.ts"}",
+      "helpers": {
+        "standardiseRelativePath.d.ts": "//# sourceMappingURL=standardiseRelativePath.d.ts.map",
+        "standardiseRelativePath.d.ts.map": "{"version":3,"file":"standardiseRelativePath.d.ts"}",
+      },
+      "index.d.ts": "//# sourceMappingURL=index.d.ts.map",
+      "index.d.ts.map": "{"version":3,"file":"index.d.ts"}",
+      "types.d.ts": "//# sourceMappingURL=types.d.ts.map",
+      "types.d.ts.map": "{"version":3,"file":"types.d.ts"}",
+    },
+  },
+}
+`;
