@@ -1,3 +1,9 @@
+#### 0.0.4 (2023-12-16)
+
+##### Refactors
+
+*  add type entry points to package json example (b7659daf)
+
 #### 0.0.3 (2023-12-16)
 
 ##### Bug Fixes
