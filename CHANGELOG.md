@@ -1,3 +1,9 @@
+#### 0.0.3 (2023-12-16)
+
+##### Bug Fixes
+
+*  add package keywords (2cc0df8c)
+
 #### 0.0.2 (2023-12-15)
 
 ##### New Features
