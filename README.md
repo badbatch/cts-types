@@ -24,6 +24,15 @@ npm add cts-types --save-dev
 // package.json
 {
   ...
+  "types": "./dist/types/cjs/index.d.cts",
+  "exports": {
+    "types": {
+      "import": "./dist/types/esm/index.d.ts",
+      "require": "./dist/types/cjs/index.d.cts"
+    },
+    ...
+  },
+  ...
   "scripts": {
     ...
     "compile:types": "tsc --project ./tsconfig.build.json && cts-types build dist/types/esm dist/types/cjs",
