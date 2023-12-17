@@ -1,3 +1,10 @@
+#### 0.0.5 (2023-12-17)
+
+##### Bug Fixes
+
+*  update snapshot (b8091af8)
+*  add recursive option to mkDir (285a4357)
+
 #### 0.0.4 (2023-12-16)
 
 ##### Refactors
