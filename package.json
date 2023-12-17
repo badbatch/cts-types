@@ -125,12 +125,12 @@
     "typescript": "^5.0.3"
   },
   "keywords": [
-    "typescript",
-    "commonjs",
-    "esmodules",
     "cjs",
-    "esm",
+    "commonjs",
     "cts",
-    "dual package"
+    "dual package",
+    "esm",
+    "esmodules",
+    "typescript"
   ]
 }

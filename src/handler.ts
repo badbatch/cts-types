@@ -39,7 +39,7 @@ export const handler = ({ input, output, verbose = false }: HandlerArgs) => {
       const outputDir = resolve(process.cwd(), dirname(outputFile));
 
       if (!existsSync(outputDir)) {
-        mkdirSync(outputDir);
+        mkdirSync(outputDir, { recursive: true });
       }
 
       writeFileSync(outputFile, updatedContent);
