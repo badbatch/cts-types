@@ -13,6 +13,12 @@ exports[`handler when there are files to convert when no output dir is provided 
       "handler.d.ts": "//# sourceMappingURL=handler.d.ts.map",
       "handler.d.ts.map": "{"version":3,"file":"handler.d.ts"}",
       "helpers": {
+        "buildEndpoint": {
+          "index.d.cts": "//# sourceMappingURL=index.d.cts.map",
+          "index.d.cts.map": "{"version":3,"file":"index.d.cts"}",
+          "index.d.ts": "//# sourceMappingURL=index.d.ts.map",
+          "index.d.ts.map": "{"version":3,"file":"index.d.ts"}",
+        },
         "standardiseRelativePath.d.cts": "//# sourceMappingURL=standardiseRelativePath.d.cts.map",
         "standardiseRelativePath.d.cts.map": "{"version":3,"file":"standardiseRelativePath.d.cts"}",
         "standardiseRelativePath.d.ts": "//# sourceMappingURL=standardiseRelativePath.d.ts.map",
@@ -41,6 +47,10 @@ exports[`handler when there are files to convert when output dir is provided sho
         "handler.d.cts": "//# sourceMappingURL=handler.d.cts.map",
         "handler.d.cts.map": "{"version":3,"file":"handler.d.cts"}",
         "helpers": {
+          "buildEndpoint": {
+            "index.d.cts": "//# sourceMappingURL=index.d.cts.map",
+            "index.d.cts.map": "{"version":3,"file":"index.d.cts"}",
+          },
           "standardiseRelativePath.d.cts": "//# sourceMappingURL=standardiseRelativePath.d.cts.map",
           "standardiseRelativePath.d.cts.map": "{"version":3,"file":"standardiseRelativePath.d.cts"}",
         },
@@ -54,6 +64,10 @@ exports[`handler when there are files to convert when output dir is provided sho
       "handler.d.ts": "//# sourceMappingURL=handler.d.ts.map",
       "handler.d.ts.map": "{"version":3,"file":"handler.d.ts"}",
       "helpers": {
+        "buildEndpoint": {
+          "index.d.ts": "//# sourceMappingURL=index.d.ts.map",
+          "index.d.ts.map": "{"version":3,"file":"index.d.ts"}",
+        },
         "standardiseRelativePath.d.ts": "//# sourceMappingURL=standardiseRelativePath.d.ts.map",
         "standardiseRelativePath.d.ts.map": "{"version":3,"file":"standardiseRelativePath.d.ts"}",
       },
