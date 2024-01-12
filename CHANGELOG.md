@@ -1,3 +1,10 @@
+#### 0.0.6 (2024-01-12)
+
+##### Chores
+
+*  add husky (7da5e550)
+*  bump deps (0dedaa01)
+
 #### 0.0.5 (2023-12-17)
 
 ##### Bug Fixes
