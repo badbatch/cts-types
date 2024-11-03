@@ -1,7 +1,7 @@
 {
   "name": "cts-types",
   "description": "A command line script for generating d.cts files from d.ts files.",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "author": "Dylan Aubrey",
   "license": "MIT",
   "homepage": "https://github.com/badbatch/cts-types",

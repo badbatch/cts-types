@@ -1,5 +1,17 @@
 # Changelog
 
+## 0.0.7 (2024-11-03)
+
+### Bug Fixes
+
+* github actions config (fb9cfae4)
+* security vulnerabilities (a2cb1d38)
+* update husky commit message (e74c6211)
+
+### Refactors
+
+* upgrade repodog deps (7ff41922)
+
 ## 0.0.6 (2024-01-12)
 
 ### Chores
