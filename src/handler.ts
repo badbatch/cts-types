@@ -6,7 +6,7 @@ import { existsSync, mkdirSync, readFileSync, writeFileSync } from 'node:fs';
 import { dirname, parse, resolve } from 'node:path';
 import shelljs from 'shelljs';
 import { standardiseRelativePath } from './helpers/standardiseRelativePath.ts';
-import type { HandlerArgs } from './types.ts';
+import { type HandlerArgs } from './types.ts';
 
 export const handler = ({ input, output, verbose = false }: HandlerArgs) => {
   setVerbose(verbose, 'cts-types');
@@ -34,7 +34,7 @@ export const handler = ({ input, output, verbose = false }: HandlerArgs) => {
       const outputFile = output ? renamedFile.replace(standardisedInput, standardiseRelativePath(output)) : renamedFile;
       verboseLog(`outputFile: ${outputFile}`);
       const content = readFileSync(file, { encoding: 'utf8' });
-      const updatedContent = content.replace(/\.ts/g, '.cts');
+      const updatedContent = content.replaceAll('.ts', '.cts');
       verboseLog(`Outputing ${file} to: ${outputFile}\n`);
       const outputDir = resolve(process.cwd(), dirname(outputFile));
 
@@ -51,7 +51,7 @@ export const handler = ({ input, output, verbose = false }: HandlerArgs) => {
     const confirmedError = isError(error) ? error : new Error('An unexpected error occured.');
 
     shelljs.echo(
-      `${colors.magenta('cts-types')} ${colors.dim('=>')} ${colors.red(`Error: ${confirmedError.message}`)}`
+      `${colors.magenta('cts-types')} ${colors.dim('=>')} ${colors.red(`Error: ${confirmedError.message}`)}`,
     );
 
     return shelljs.exit(1);

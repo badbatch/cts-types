@@ -125,7 +125,7 @@ describe('handler', () => {
       handler({ input });
 
       expect(shelljs.echo).toHaveBeenCalledWith(
-        expect.stringContaining('No files to convert. Please check the input is correct')
+        expect.stringContaining('No files to convert. Please check the input is correct'),
       );
     });
 

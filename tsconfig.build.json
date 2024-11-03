@@ -5,6 +5,7 @@
     "outDir": "dist/types/esm"
   },
   "exclude": [
-    "**/*.test.*"
+    "**/*.test.*",
+    "**/__testUtils__/**"
   ]
 }

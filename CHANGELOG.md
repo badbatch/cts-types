@@ -1,39 +1,40 @@
-#### 0.0.6 (2024-01-12)
+# Changelog
 
-##### Chores
+## 0.0.6 (2024-01-12)
 
-*  add husky (7da5e550)
-*  bump deps (0dedaa01)
+### Chores
 
-#### 0.0.5 (2023-12-17)
+* add husky (7da5e550)
+* bump deps (0dedaa01)
 
-##### Bug Fixes
+## 0.0.5 (2023-12-17)
 
-*  update snapshot (b8091af8)
-*  add recursive option to mkDir (285a4357)
+### Bug Fixes
 
-#### 0.0.4 (2023-12-16)
+* update snapshot (b8091af8)
+* add recursive option to mkDir (285a4357)
 
-##### Refactors
+## 0.0.4 (2023-12-16)
 
-*  add type entry points to package json example (b7659daf)
+### Refactors
 
-#### 0.0.3 (2023-12-16)
+* add type entry points to package json example (b7659daf)
 
-##### Bug Fixes
+## 0.0.3 (2023-12-16)
 
-*  add package keywords (2cc0df8c)
+### Bug Fixes
 
-#### 0.0.2 (2023-12-15)
+* add package keywords (2cc0df8c)
 
-##### New Features
+## 0.0.2 (2023-12-15)
 
-*  Add docs and unit tests and cjs output (dd747349)
-*  first draft of lib (05bdd051)
+### New Features
 
-##### Bug Fixes
+* Add docs and unit tests and cjs output (dd747349)
+* first draft of lib (05bdd051)
 
-*  readme formattings (bde899d0)
-*  readme typos (e587839f)
-*  update desc and standardise relative paths (40118d71)
+### Bug Fixes
 
+* readme formattings (bde899d0)
+* readme typos (e587839f)
+* update desc and standardise relative paths (40118d71)
