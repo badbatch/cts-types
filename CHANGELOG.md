@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.0.8 (2024-11-20)
+
+### Bug Fixes
+
+* remove postinstall script (ef90304e)
+
 ## 0.0.7 (2024-11-03)
 
 ### Bug Fixes
