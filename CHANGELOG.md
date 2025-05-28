@@ -1,5 +1,19 @@
 # Changelog
 
+## 0.0.9 (2025-05-28)
+
+### Chores
+
+* **deps:**
+  * bump serialize-javascript (292aa024)
+  * bump cross-spawn (fad43aae)
+  * bump @eslint/plugin-kit (e3fc462a)
+
+### Bug Fixes
+
+* vulnerabilities (ec63420e)
+* vulnerabilities (5da5f9df)
+
 ## 0.0.8 (2024-11-20)
 
 ### Bug Fixes
