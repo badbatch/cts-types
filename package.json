@@ -2,7 +2,7 @@
   "name": "cts-types",
   "description": "A command line script for generating d.cts files from d.ts files.",
   "version": "0.0.9",
-  "author": "Dylan Aubrey",
+  "author": "miami-man",
   "license": "MIT",
   "homepage": "https://github.com/badbatch/cts-types",
   "repository": "badbatch/cts-types",
