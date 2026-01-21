@@ -23,7 +23,8 @@ export const handler = ({ input, output, verbose = false }: HandlerArgs) => {
     verboseLog(`Files to convert:${files.length > 0 ? `\n${files.join('\n')}` : ' None'}\n`);
 
     if (files.length === 0) {
-      throw new Error('No files to convert. Please check the input is correct.');
+      log(`No files to convert for input "${standardisedInput}". Please check the input is correct.`);
+      return shelljs.exit(0);
     }
 
     for (const file of files) {

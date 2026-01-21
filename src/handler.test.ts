@@ -112,27 +112,29 @@ describe('handler', () => {
   });
 
   describe('when there are no files to convert', () => {
+    let log: jest.Mocked<(typeof import('@repodog/cli-utils'))['log']>;
     let shelljs: jest.Mocked<typeof import('shelljs')>;
 
     beforeEach(async () => {
+      ({ log } = jest.mocked(await import('@repodog/cli-utils')));
       shelljs = jest.mocked(await import('shelljs')).default;
       const { glob } = jest.mocked(await import('glob'));
       glob.sync.mockReturnValueOnce([]);
     });
 
-    it('should throw an error', async () => {
+    it('should log the expected message', async () => {
       const { handler } = await import('./handler.ts');
       handler({ input });
 
-      expect(shelljs.echo).toHaveBeenCalledWith(
-        expect.stringContaining('No files to convert. Please check the input is correct'),
+      expect(log).toHaveBeenCalledWith(
+        'No files to convert for input "project/dist/types". Please check the input is correct.',
       );
     });
 
-    it('should exit with a code of 1', async () => {
+    it('should exit with a code of 0', async () => {
       const { handler } = await import('./handler.ts');
       handler({ input });
-      expect(shelljs.exit).toHaveBeenCalledWith(1);
+      expect(shelljs.exit).toHaveBeenCalledWith(0);
     });
   });
 
