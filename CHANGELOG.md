@@ -1,5 +1,15 @@
 # Changelog
 
+## 0.0.11 (2026-01-21)
+
+### Chores
+
+* force commit (dc03d40b)
+
+### Refactors
+
+* don't throw when no files to transform, just log and exit (f4a5343c)
+
 ## 0.0.10 (2025-06-13)
 
 ### Chores
