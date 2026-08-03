@@ -8,7 +8,7 @@ import shelljs from 'shelljs';
 import { standardiseRelativePath } from './helpers/standardiseRelativePath.ts';
 import { type HandlerArgs } from './types.ts';
 
-export const handler = ({ input, output, verbose = false }: HandlerArgs) => {
+export const handler = ({ input, output, verbose = false }: HandlerArgs): never => {
   setVerbose(verbose, 'cts-types');
   verboseLog('>>>> USER CONFIG START <<<<');
   verboseLog(`input: ${input}`);
@@ -32,7 +32,11 @@ export const handler = ({ input, output, verbose = false }: HandlerArgs) => {
       const { dir, ext, name } = parse(file);
       const renamedFile = ext === '.ts' ? `${dir}/${name}.cts` : `${dir}/${name.replace(/\.ts$/, '.cts')}.map`;
       verboseLog(`renamedFile: ${renamedFile}`);
-      const outputFile = output ? renamedFile.replace(standardisedInput, standardiseRelativePath(output)) : renamedFile;
+
+      const outputFile = output
+        ? renamedFile.replace(standardisedInput, () => standardiseRelativePath(output))
+        : renamedFile;
+
       verboseLog(`outputFile: ${outputFile}`);
       const content = readFileSync(file, { encoding: 'utf8' });
       const updatedContent = content.replaceAll('.ts', '.cts');

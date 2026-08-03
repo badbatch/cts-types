@@ -1,6 +1,6 @@
 import { expect, jest } from '@jest/globals';
+import { type SnapshotNode, toSnapshotSync } from '@jsonjoy.com/fs-snapshot';
 import { createFsFromVolume, vol } from 'memfs';
-import { type SnapshotNode, toSnapshotSync } from 'memfs/lib/snapshot';
 
 jest.unstable_mockModule('@repodog/cli-utils', () => ({
   log: jest.fn(),
@@ -65,6 +65,7 @@ const resetFileSystem = () => {
 
 const getSimplifiedSnapshotFileTree = () => {
   const snapshot = toSnapshotSync({ fs: vol, path: 'project' });
+
   type SimplifiedSnapshotFileTree = { [key: string]: string | SimplifiedSnapshotFileTree };
 
   const parseSnapshot = (snap: SnapshotNode): string | SimplifiedSnapshotFileTree => {
