@@ -20,38 +20,30 @@ npm add cts-types --save-dev
 
 ## Usage
 
+Below are examples of the relevant fields you can add to your `package.json` and `tsconfig.json`.
+
 ```jsonc
 // package.json
 {
-  ...
-  "types": "./dist/types/cjs/index.d.cts",
+  "types": "./dist/types/cjs/index.d.ts",
   "exports": {
     "types": {
       "import": "./dist/types/esm/index.d.ts",
       "require": "./dist/types/cjs/index.d.cts"
-    },
-    ...
+    }
   },
-  ...
   "scripts": {
-    ...
     "compile:types": "tsc --project ./tsconfig.build.json && cts-types build dist/types/esm dist/types/cjs",
-    ...
   }
-  ...
 }
 ```
 
 ```jsonc
-// tsconfig.build.json
+// tsconfig.json
 {
-  ...
   "compilerOptions": {
-    ...
     "outDir": "dist/types/esm"
-    ...
-  },
-  ...
+  }
 }
 ```
 
