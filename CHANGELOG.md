@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.0.13 (2026-08-03)
+
+### Documentation Changes
+
+* update readme ([5c0c4dc8](https://github.com/badbatch/cts-types/commit/5c0c4dc8a0275c7a14137514c77fbeefeb8e7932))
+
 ## 0.0.12 (2026-08-03)
 
 ### Chores
