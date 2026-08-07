@@ -1,5 +1,12 @@
 # Changelog
 
+## 0.0.15 (2026-08-07)
+
+### Chores
+
+* bump dep ([42f5f44a](https://github.com/badbatch/cts-types/commit/42f5f44acaef75174e72881e207ce9a0eb43449d))
+* update pnpm config ([10b794b1](https://github.com/badbatch/cts-types/commit/10b794b145ea45ba8b8bfbce07c8a5a355f87669))
+
 ## 0.0.14 (2026-08-07)
 
 ### Chores
