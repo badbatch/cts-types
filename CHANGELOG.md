@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.0.14 (2026-08-07)
+
+### Chores
+
+* bump deps ([62b5fdc7](https://github.com/badbatch/cts-types/commit/62b5fdc77bfb50f40530a064d3b81914418cf800))
+
 ## 0.0.13 (2026-08-03)
 
 ### Documentation Changes
