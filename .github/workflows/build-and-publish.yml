@@ -1,4 +1,3 @@
-name: Build and publish
 
 on:
   push:
@@ -15,4 +14,4 @@ jobs:
     permissions:
       id-token: write
       contents: read
-    uses: ./.github/workflows/master-build-and-publish.yml
+    uses: badbatch/repodog/.github/workflows/master-build-and-publish.yml@main
