@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.0.16 (2026-08-26)
+
+### Refactors
+
+* update way we auth with npm ([e3f22b38](https://github.com/badbatch/cts-types/commit/e3f22b38e4c72d5f185462d118297bddf4bac24f))
+
 ## 0.0.15 (2026-08-07)
 
 ### Chores
