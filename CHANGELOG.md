@@ -1,5 +1,12 @@
 # Changelog
 
+## 0.0.17 (2026-08-26)
+
+### Bug Fixes
+
+* formatting ([bde6b22c](https://github.com/badbatch/cts-types/commit/bde6b22c2e4ab1317b7700de52f5fffd13ba5ffe))
+* path to github actions master build and publish ([4ee69856](https://github.com/badbatch/cts-types/commit/4ee698566523a7802623fe1a9df347749e415dea))
+
 ## 0.0.16 (2026-08-26)
 
 ### Refactors
